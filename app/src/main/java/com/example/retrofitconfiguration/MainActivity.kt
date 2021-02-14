@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //hello world
+        //we are good
          val TAG = "rdmn"
         var letsSee=ApiConnector.getInstance().create(contactApi::class.java)
         letsSee.getAllContacts().enqueue(object : retrofit2.Callback<List<ContactModel>>{
